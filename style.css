@@ -110,10 +110,11 @@ main{
     display:grid;
     /* gap:2px; */
     border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    padding:10px 0;
 }
 .youtube-pages a{
     text-decoration: none;
-    color:black;
+    color:#030303;
     font-size: 16px;
     display: grid;
     align-items: center;
@@ -123,6 +124,7 @@ main{
 }
 .youtube-pages a:focus{
     background-color: #dedede;
+    color:black;
 }
 .youtube-text{
    font-weight: 300;
@@ -168,6 +170,7 @@ main{
     display:grid;
     /* gap:2px; */
     border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    padding:10px 0;
 }
 .user-access-pages a{
     text-decoration: none;
@@ -231,6 +234,7 @@ main{
     display:grid;
     /* gap:2px; */
     border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    padding:10px 0;
 }
 .subscriptions a{
     text-decoration: none;
@@ -245,9 +249,9 @@ main{
 .subscriptions a:focus{
     background-color: #dedede;
 }
-.subscriptions-header{
+.heading{
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     margin:20px;
     margin-bottom: 10px;
     color:#606060;
@@ -307,6 +311,179 @@ main{
 .browse-channels-icon{
     width:25px;
 }
+.more-from-youtube{
+    display:grid;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    padding:10px 0;
+}
+.more-from-youtube a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    display: grid;
+    align-items: center;
+}
+.more-from-youtube a:hover{
+    background-color: #f8f8f8;
+}
+.more-from-youtube a:focus{
+    background-color: #dedede;
+}
+.yotube-premium{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.premium-icon{
+    width:25px;
+}
+.movies{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.movies-icon{
+    width:25px;
+}
+.gaming{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.gaming-icon{
+    width:25px;
+}
+.live{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.live-icon{
+    width:25px;
+}
+.fashion{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.fashion-icon{
+    width:25px;
+}
+.learning{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.learning-icon{
+    width:25px;
+}
+.sports{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.sports-icon{
+    width:25px;
+}
+.settings{
+    display:grid;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    padding:10px 0;
+}
+.settings a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    display: grid;
+    align-items: center;
+}
+.settings a:hover{
+    background-color: #f8f8f8;
+}
+.settings a:focus{
+    background-color: #dedede;
+}
+.settings-menu{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.settings-icon{
+    width:25px;
+}
+.report{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.report-icon{
+    width:25px;
+}
+.help{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.help-icon{
+    width:25px;
+}
+.feedback{
+    display: grid;
+    grid-template-columns: 30px auto;
+   align-items: center;
+   padding:5px 40px;
+    gap:10px;
+    padding-left:20px;
+}
+.feedback-icon{
+    width:25px;
+}
+.footer-part{
+    display:grid;
+    padding:10px 20px;
+    gap:10px;
+}
+.footer-part a{
+    font-size: 12px;
+    text-decoration: none;
+    color:#606060;
+    font-weight: 500;
+}
+.copyright{
+    font-size:13px;
+    color:#909090;
+}
+
 .main-section{
     outline: solid green 1px;
 }
