@@ -501,6 +501,8 @@ main{
     display:grid;
     grid-template-rows: 50px auto;
     border-top:solid 1px #dedede;
+    overflow:scroll;
+   
 }
 .main-ribbon{
     display: grid;
@@ -512,9 +514,7 @@ main{
     place-items: center;
     border-bottom:solid 1px #dedede;
     overflow:hidden;
-    position:sticky;
-    /* top:70px;
-    z-index: 10; */
+    
 }
 .main-ribbon:hover{
     overflow-y: hidden;
@@ -554,7 +554,7 @@ main{
     gap:10px;
     background-color: #f9f9f9;
     padding:20px;
-    border-bottom: solid 5px #909090;
+    border-bottom: solid 3px #dedede;
 }
 
 .thumbnail-container{
@@ -602,7 +602,7 @@ main{
     grid-template-rows: 50px auto auto;
     gap:15px;
    
-    border-bottom: solid 5px #909090;
+    border-bottom: solid 3px #dedede;
     /* padding:15px; */
 }
 .title{
