@@ -8,6 +8,7 @@ body{
 }
 img{
     width: 100%;
+   
 }
 header{
     /* height:50px; */
@@ -16,6 +17,7 @@ header{
     grid-template-columns: auto 1fr auto;
     /* position: sticky;
     top:0; */
+    width:100vw;
 }
 .header-icons{
     display: grid;
@@ -100,6 +102,7 @@ main{
     display: grid;
     grid-template-columns: 250px 1fr;
     height:100vh;
+    width:100vw;
 }
 .side-menu{
     /* outline: solid red 1px; */
@@ -108,6 +111,7 @@ main{
     /* gap:20px; */
     /* position: sticky;
     z-index: -1; */
+    
 }
 .side-menu:hover{
     overflow: auto;
@@ -506,6 +510,7 @@ main{
     padding:5px 20px;
     place-items: center;
     border-bottom:solid 1px #dedede;
+    overflow:hidden;
 }
 .main-ribbon:hover{
     overflow-y: hidden;
@@ -514,7 +519,7 @@ main{
 .main-ribbon a{
     text-decoration: none;
     min-width: max-content;
-    font-size:14px;
+    font-size:15px;
     border:solid 1px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     padding:5px 10px;
@@ -533,7 +538,68 @@ main{
 }
 .video-part{
     background-color: antiquewhite;
+    display: grid;
 }
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-auto-rows: 300px;
+    /* grid-auto-columns: 300px; */
+    justify-content: start;
+    gap:10px;
+    background-color: #f9f9f9;
+    padding:20px;
+}
+
+.thumbnail-container{
+    background-color: #f9f9f9;
+    border:solid 1px black;
+    display: grid;
+    border:none;
+
+}
+.thumbnail-container a{
+    color:none;
+    text-decoration: none;
+}
+.thumbnail{
+    height:100%;
+}
+.info{
+    display: grid;
+    grid-template-columns: 40px 20ch;
+    align-items: start;
+    gap:10px;
+    padding-top:10px;
+}
+.channel-logo{
+    border-radius: 50%;
+}
+.info-title{
+    display: grid;
+    gap:10px;
+}
+.info-title h4{
+    font-size: 14px;
+    color:black;
+}
+.info-title p{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color:#7f7f7f;
+}
+.verified{
+    width:10px;
+}
+
+
+
+
+
+
+
+
+
 
 /* Scrollbar styling */
 
