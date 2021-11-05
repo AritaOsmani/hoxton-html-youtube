@@ -104,7 +104,8 @@ main{
     grid-template-columns: 250px 1fr;
     height:100vh;
     width:100vw;
-    position: relative;
+    /* position: relative; */
+    
 }
 .side-menu{
     /* outline: solid red 1px; */
@@ -115,7 +116,7 @@ main{
     
 }
 .side-menu:hover{
-    overflow: auto;
+    overflow: scroll;
 }
 .youtube-pages{
     display:grid;
@@ -494,15 +495,12 @@ main{
     color:#909090;
 }
 
-
-
 /* Main section */
 .main-section{
     display:grid;
     grid-template-rows: 50px auto;
     border-top:solid 1px #dedede;
-    overflow:scroll;
-   
+    overflow:auto;
 }
 .main-ribbon{
     display: grid;
@@ -514,7 +512,6 @@ main{
     place-items: center;
     border-bottom:solid 1px #dedede;
     overflow:hidden;
-    
 }
 .main-ribbon:hover{
     overflow-y: hidden;
@@ -543,6 +540,8 @@ main{
 .video-part{
     background-color: #f9f9f9;
     display: grid;
+    /* overflow:scroll; */
+    
    
 }
 .videos{
@@ -605,6 +604,11 @@ main{
     border-bottom: solid 3px #dedede;
     /* padding:15px; */
 }
+.trending-vdeos{
+    display: grid;
+    grid-template-rows: 50px auto;
+    gap:15px;
+}
 .title{
     font-weight:300;
     font-size:22px;
@@ -635,22 +639,16 @@ main{
 }
 
 
-
-
-
-
-
-
 /* Scrollbar styling */
 
-::-webkit-scrollbar{
+.side-menu::-webkit-scrollbar{
     width:10px;
 }
-::-webkit-scrollbar-track{
+.side-menu::-webkit-scrollbar-track{
     background:#f1f1f1;
   
 }
-::-webkit-scrollbar-thumb{
+.side-menu::-webkit-scrollbar-thumb{
     background:#888;
     border-radius: 5px;
 }
@@ -660,4 +658,88 @@ main{
 .main-ribbon::-webkit-scrollbar{
     width:5px;
     height:5px;
+}
+
+
+@media screen and (max-width:900px){
+    header{
+        /* height:50px; */
+        display: grid;
+        grid-template-columns: 200px 1fr auto;
+        justify-items: start;
+       
+    }
+    .search-bar{
+        /* outline: solid black 1px; */
+        display: grid;
+        grid-template-columns: 1fr auto;
+        justify-content: start;
+        /* padding:0 100px; */
+        /* gap:10px; */
+        margin: 0;
+        padding:10px;
+       
+    }
+    .search-box{
+    
+        display: grid;
+        grid-template-columns: auto auto;
+        /* padding:10px 100px; */
+        
+    }
+    .search-input{
+        width:100%;
+        font-size: 15px;
+        padding:5px 20px;
+        border:solid 1px  #dedede;
+    }
+    /*  */
+
+    main{
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        height:100vh;
+        width:100vw;
+        /* position: relative; */
+        
+    }
+    .side-menu{
+        display: grid;
+        place-items: start;
+    }
+    .side-menu:hover{
+        overflow:auto;
+    }
+    .youtube-pages{
+        display: grid;
+        gap:20px;
+    }
+    .youtube-text{
+        display: none;
+    }
+    .user-access-pages, .subscriptions,.more-from-youtube,.settings,.footer-part{
+        display: none;
+    }
+    .main-section{
+        /* width:100vw; */
+    }
+    .videos{
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+        grid-auto-rows: 300px;
+        column-gap:50px;
+    }
+    .thumbnail-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+        grid-auto-rows: 300px;
+        /* grid-auto-columns: 300px; */
+        /* justify-content: start;
+        gap:10px;
+        background-color: #f9f9f9;
+        
+         */
+        column-gap:50px;
+        padding:10px 20px;
+    }
 }
